@@ -13,11 +13,10 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #33383C;
+    background:10% #33383C;
   height: 100dvb;
     color: #fff;
-  float: none;
-
+ 
 }
 
 
@@ -59,34 +58,46 @@ header {
 
 .logo {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 40%;
     opacity: 0;
     animation: leftSideAni 1s ease forwards;
-    margin-top: 50px;
+    float: left;
+    padding: 0;
+    padding-top: 20px;
+   
 }
 
 .logo a {
  
     color: #000;
     text-decoration: none;
+    animation: navani .3s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
 }
 
-ul {
+
+.menu ul {
     display: flex;
     gap: .6rem;
     list-style-type: none;
     background-color: transparent;
     overflow: hidden;
     margin-top: 20px;
+    float: right;
+    color: #fff;
 }
+.menu li a{
+color: #fff;
 
+
+}
 li a {
     display: inline-block;
     padding: .3rem 1rem;
     color: #000;
     text-decoration: none;
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: .7px;
     border-radius: 36px;
     line-height: 2;
@@ -106,7 +117,12 @@ li a:hover {
 }
 
 .menu {
-    display: none;
+   
+    
+    float: right;
+    margin: 0;
+    padding-left: 100px;
+   
 }
 
 .mode i {
@@ -157,7 +173,7 @@ float: none;
     margin: auto;
     float: none;
   
-    width: 33%%;
+    width: 33%;
     
 
 }
@@ -287,6 +303,7 @@ background-color: #fff;
         font-size: 1.5rem;
         font-weight: bold;
         color: #fff;
+        margin-left: -500px;
     }
 
     #click:checked~ul {
@@ -313,19 +330,19 @@ background-color: #fff;
 .green a{
     color: green;
 }
-.h4{
+.hey {
     background: rgb(4, 3, 19);
-    width: 30%;
-    right: 30%;
+    width: 800px;
+    right: 800px;
     border-style: dotted;
- 
+ float: auto;
     color: #e4e4e4;
-background-position: 0;
-box-sizing: border-box;
+    box-sizing: border-box;
     float: none;
     justify-content: center;
 direction: rtl;
     line-height: 1.5;
+font-size: large;
 }
 li a::after {
     content: "";
