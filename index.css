@@ -22,15 +22,20 @@ body {
 
 /* Genral */
 .container {
+    position: fixed;
+
     padding: 0 8.4rem;
     background-color: rgb(234, 255, 0);
     border-radius: 7px;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     border: 5px double #33383C;
-   width: 50%;
+   width: 15%;
    height: 15%;
    margin: auto;
+   float: right;
+
+
 }
 
 .img-w {
@@ -38,7 +43,7 @@ body {
     height: auto;
 }
 /* Nav */
-header {
+.header {
     background: var(--primary-color);
     position: relative;
     box-shadow: 0 4px 17px rgb(255 255 255 / 10%);
@@ -87,7 +92,7 @@ header {
     color: #fff;
 }
 .menu li a{
-color: #fff;
+color: #000;
 
 
 }
@@ -119,7 +124,7 @@ li a:hover {
 .menu {
    
     
-    float: right;
+    float: left;
     margin: 0;
     padding-left: 100px;
    
@@ -261,9 +266,8 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 4.4rem;
-    }
+  
+    
     .main h3 {
         color: #000;
         margin-top: 1rem;
@@ -273,14 +277,17 @@ background-color: #fff;
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 1.6rem;
+
     }
 }
 
 @media screen and (max-width:600px) {
     body {
         height: auto;
+    
     }
     header {
+        float: left;
         height: auto;
         background-color: var(--primary-color);
     }
